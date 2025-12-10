@@ -28,7 +28,7 @@ markup:
     renderer:
       unsafe: true
 
-Menus:
+menus:
   main:
     - identifier: blog
       name: Blog
@@ -134,10 +134,10 @@ params:
   hero:
     enable: true
     intro: "Hi, my name is"
-    title: "Isabella."
-    subtitle: "I build things for the web"
-    content: "A passionate web app developer. I tend to make use of modern web technologies to build websites that look great, feel fantastic, and function correctly."
-    image: /images/hero.svg
+    title: "Line."
+    subtitle: "I transform human language into automated, intelligent workflows using NLP and linguistic expertise."
+    content: "PhD in Neurolinguistics (City, University of London)."
+    image: "/images/line-pic.jpg"
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
@@ -161,35 +161,35 @@ params:
   about:
     enable: true
     title: "About Me"
-    image: "/images/me.png"
+    image: "/line-pic.jpg"
     content: |-
-      I am a software developer with a passion for web development. I have a background in computer science and mathematics, and I have a strong interest in the intersection of technology and art. I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA.
+      I am a data scientist specialising in text processing. I have a background in linguistics and a PhD in neurolinguistics. I am currently working as a data scientist freelancer in Berlin, Germany as well as remotely.
 
-      I am currently working on a project that will be used to help people find the best way to get around the city.
+      I am currently working on a project around automated text summarising.
     skills:
       enable: true
       title: "Here are a few technologies I've been working with recently:"
       items:
-        - "HTML"
-        - "CSS"
-        - "JavaScript"
-        - "React"
-        - "Node"
-        - "Express"
+        - "Python"
+        - "OpenAI"
+        - "Large Language Models (LLM)"
+        - "Amazon Web Services (AWS)"
+        - "Machine Learning"
+        - "Hugging Face"
 
   # Experience
   experience:
     enable: true
     # title: "Custom Name"
     items:
-      - company: "Facebook"
-        companyUrl: "https://example.com"
+      - company: "Futurelearn"
+        companyUrl: "http://futurelearn.com/"
         jobs:
-          - name: "Senior Software Developer"
-            date: "Jan 2023 - present"
+          - name: "Senior Data Scientist"
+            date: "Aug 2021 - Nov 2022"
             content: "I am currently working as a senior software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
             info:
-              content: Working as a senior software developer
+              content: Working as a senior data Scientist
             featuredItems:
               fontAwesomeIcons:
                 - icon: fa-brands fa-react
@@ -206,13 +206,13 @@ params:
             date: "Jan 2022 - Dec 2023"
             content: "I worked as a software developer. I worked on a project that will be used to help people find the best way to get around the city."
 
-      - company: "Amazon"
-        companyUrl: "https://example.com"
+      - company: "Futurelearn"
+        companyUrl: "http://futurelearn.com/"
         jobs:
-          - name: "Software Developer"
-            date: "Sep 2020 - Dec 2021"
+          - name: "Data Scientist"
+            date: "Jun 2017 - Jul 2021"
             info:
-              content: I worked as a software developer for more than one year in Amazon.
+              content: I worked as a data Scientist.
             content: |
               I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
 
@@ -221,7 +221,7 @@ params:
 
       - company: "Apple"
         companyUrl: "https://example.com"
-        jobs: 
+        jobs:
         - name: "Junior Software Developer"
           date: "Jan 2020 - Aug 2020"
           featuredItems:
@@ -305,22 +305,20 @@ params:
     enable: true
     # title: "Custom Name"
     items:
-      - title: Google kickstart runner
-        content: I solved all problems with optimal solution.
-        url: https://example.com
+      - title: Future Stars of Tech Award
+        content: I was recognized for my data science work at Futurelearn.
+        url: https://www.futurelearn.com/info/press-releases/futurelearn-data-scientist-honoured-at-future-stars-of-tech-awards
         image: /images/achievement.jpg
-      - title: Facebook Hackathon Winner
-        content: Developed a product using Artificial Intelligence.
+      - title: Recipient of the "GAB Förderpreis"​ (Research price)
+        content: Prize for a research study (Issued by Fund from German Association for Aphasia Research and Treatment)
         image: /images/achievement.jpg
-      - title: Hugo Profile
-        content: Developed a theme and getting 1K+ downloads per month.
+      - title: PhD Studentship (City, University of London)
+        content: Given a PhD Studentship to study in London, UK.
         url: "https://github.com/gurusabarish/hugo-profile"
         image: /images/achievement.jpg
-      - title: Microsoft Imagine Runner
-        content: We are developed a product which can help others.
-      - title: Google Summer of Code
-        content: Contributed to a open source project.
-        url: https://example.com
+      - title: Recipient of the Graduate Award (University of Hamburg, Germany)
+        content: Best thesis of faculty.
+
 
   # projects
   projects:
