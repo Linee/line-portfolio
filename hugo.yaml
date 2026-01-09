@@ -31,15 +31,15 @@ markup:
 menus:
   main:
     - identifier: blog
-      name: Blog
-      title: Blog posts
-      url: /blogs
-      weight: 1
-    - identifier: gallery
-      name: Gallery
-      title: Blog posts
-      url: /gallery
-      weight: 2
+      #name: Blog
+      #title: Blog posts
+     # url: /blogs
+      #weight: 1
+    #- identifier: gallery
+   #   name: Gallery
+   #   title: Blog posts
+   #   url: /gallery
+   #   weight: 2
     #Dropdown menu
     # - identifier: dropdown
     #   title: Example dropdown menu
@@ -144,118 +144,142 @@ params:
     button:
       enable: true
       name: "Resume"
-      url: "#"
+      url: "/documents/cv-anneline-huck.pdf"
       download: true
       newPage: false
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
-          url: https://example.com
-        - icon: fab fa-x-twitter
-          url: https://example.com
+          url: https://github.com/Linee
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/annelinehuck/
+          github: https://github.com/Linee
+          linkedin: https://www.linkedin.com/in/annelinehuck/
       customIcons:
         - icon: /fav.png
-          url: "https://example.com"
+          url: https://www.linkedin.com/in/annelinehuck/
 
   # About
   about:
     enable: true
     title: "About Me"
-    image: "/line-pic.jpg"
+    image: "/images/line-pic_bw.jpg"
     content: |-
-      I am a data scientist specialising in text processing. I have a background in linguistics and a PhD in neurolinguistics. I am currently working as a data scientist freelancer in Berlin, Germany as well as remotely.
+      I am a data scientist specialising in text processing. My background is in linguistics and academic research, and I hold a PhD in neurolinguistics. I am currently working as a data scientist freelancer in Berlin, Germany.
 
-      I am currently working on a project around automated text summarising.
+      The project I work on at the moment is around automated text summarising and automatising text-mining workflows.
     skills:
       enable: true
       title: "Here is my main tech stack:"
       items:
         - "Python"
-        - "OpenAI"
-        - "Large Language Models (LLM)"
+        - "SQL"
+        - "Large Language Models (LLM) & RAG"
         - "Amazon Web Services (AWS)"
         - "Machine Learning"
         - "Hugging Face"
+        - "LangChain"
 
   # Experience
   experience:
     enable: true
     # title: "Custom Name"
     items:
+      - company: "Freelance"
+        #companyUrl: "http://futurelearn.com/"
+        jobs:
+          - name: "Data Science Freelancer"
+            date: "Since Sep 2025"
+            content: "I currently work as a data science freelancer in Berlin, Germany. My current project is on automatic text-mining and generating AI-assisted summaries of research papers."
+            info:
+              content: Working as a data scientist freelancer
+            #featuredItems:
+              #fontAwesomeIcons:
+                #- icon: fa-brands fa-react
+                #  url: https://react.dev/
+                #  tooltip: Example tooltip content
+                #- icon: fab fa-x-twitter
+                 # url: https://example.com
+                  # tooltip: Example tooltip content
+              #customIcons:
+              #  - icon: /fav.png
+               #   url: "https://example.com"
+              #    tooltip: Example tooltip content
+          #- name: "Software Developer"
+          #  date: "Jan 2022 - Dec 2023"
+          #  content: "I worked as a software developer. I worked on a project that will be used to help people find the best way to get around the city."
+
       - company: "Futurelearn"
         companyUrl: "http://futurelearn.com/"
         jobs:
           - name: "Senior Data Scientist"
             date: "Aug 2021 - Nov 2022"
-            content: "I am currently working as a senior software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
             info:
-              content: Working as a senior data Scientist
-            featuredItems:
-              fontAwesomeIcons:
-                - icon: fa-brands fa-react
-                  url: https://react.dev/
-                  tooltip: Example tooltip content
-                - icon: fab fa-x-twitter
-                  url: https://example.com
-                  # tooltip: Example tooltip content
-              customIcons:
-                - icon: /fav.png
-                  url: "https://example.com"
-                  tooltip: Example tooltip content
-          - name: "Software Developer"
-            date: "Jan 2022 - Dec 2023"
-            content: "I worked as a software developer. I worked on a project that will be used to help people find the best way to get around the city."
+              content: I worked as a senior data scientist.
+            content: |
+              I worked as a senior data scientist at Futurelearn in London, UK.
+
+              - Development of recommendation engine to suggest new courses to users (Built two versions: 1. for engaged users, leveraging user-course interactions like enrolments, purchases and page views; 2. for less engaged users leveraging information of users based on personal questions on sign-up).
+              - Built time-series forecasting models: arima, exponential smoothing, Prophet (Python).
+              - Designed, implemented machine learning models (e.g. regression, classification) and productionised them (e.g. AWS, Sagemaker, Google Cloud Platform)
+              - Used natural language processing (Python) for the optimisation of SEO (e.g. automatisation of keyword categorisation).
+              - Mentored junior members of the team (e.g. helped one employee to transition from the Insights team to the DS team, onboarded three employees providing support with technical skills, processes and guiding through projects and the DS roadmap).
+              - Developed data science best practices and guidelines.
 
       - company: "Futurelearn"
-        companyUrl: "http://futurelearn.com/"
-        jobs:
-          - name: "Data Scientist"
-            date: "Jun 2017 - Jul 2021"
-            info:
-              content: I worked as a data Scientist.
-            content: |
-              I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
-
-              - Lead backend developer for a product.
-              - Created a frontend design for a product.
-
-      - company: "Apple"
         companyUrl: "https://example.com"
         jobs:
-        - name: "Junior Software Developer"
-          date: "Jan 2020 - Aug 2020"
-          featuredItems:
-            fontAwesomeIcons:
-              - icon: fa-brands fa-react
-                url: https://react.dev/
-              - icon: fab fa-x-twitter
-                url: https://example.com
-            customIcons:
-              - icon: /fav.png
-                url: "https://example.com"
+        - name: "Data Scientist"
+          date: "Jun 2017 - Aug 2021"
+          #featuredItems:
+            #fontAwesomeIcons:
+             # - icon: fa-brands fa-react
+             #   url: https://react.dev/
+             # - icon: fab fa-x-twitter
+             #   url: https://example.com
+            #customIcons:
+             # - icon: /fav.png
+             #   url: "https://example.com"
           content: |
-            I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+            I worked as a data scientist at Futurelearn in London, UK.
 
-            - Lead backend developer for a product.
-            - Created a frontend design for a product.
+            - Generated insights from data that directly impacted product development and/or increase conversion.
+            - Developed and deployed machine learning models in Python ( e.g. linear/logistic regression, classification, decision trees, Random Forest, XGBoost), achieving up to 15% improvement in prediction accuracy for key business metrics.
+            - Defined, analysed and monitored new key success measures such as average lifetime value (built in SQL).
+            - Delivered workshops in Databases and PostgreSQL for other employees (with excellent feedback on communication and teaching skills).
+            - Consulted teams with design and analysis of A/B tests (developed an A/B testing design flowchart for product teams in collaboration with product designer)
+            - Worked within cross-functional teams as data advisor.
 
-      - company: "Netflix"
-        companyUrl: "https://example.com"
+      - company: "City University of London"
+        companyUrl: "https://connect.citystgeorges.ac.uk/city/shps/school-of-health-and-psychological-sciences?utm_source=google&utm_medium=cpc&utm_campaign=aip_City_PG-Central-25-26_pMax_Events&utm_term=open-event&gad_source=1&gad_campaignid=23178119260&gbraid=0AAAAADo0oDQOvF02OaZrQBzMhP9Dmkd58&gclid=Cj0KCQiAyP3KBhD9ARIsAAJLnnb18zD8MfHP3Qqm3dW66hsdceNfmnqPJktdszqatzQqeTFCisjEfhEaAnLhEALw_wcB"
         jobs:
-        - name: "UI/UX Designer"
-          date: "June 2017 - Nov 2019"
+        - name: "Research Assistant Psychology"
+          date: "Nov 2015 - Apr 2016"
           content: |
-            I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+            I worked as a research assistant in the Psychology department at City, University of London in London, UK.
 
-            - Lead backend developer for a product.
-            - Created a frontend design for a product.
+            - Preparation of data collection and recruitment of study participants.
+            - Administration of lab-based experiments on audio-visual speech comprehension using MATLAB.
+            - Troubleshooting and problem solving during lab work.
 
-      - company: "Google"
-        companyUrl: "https://example.com"
+      - company: "City University of London"
+        companyUrl: "https://www.citystgeorges.ac.uk/research/centres/language-and-communication-science"
         jobs:
-        - name: "Product Designer"
-          date: "Feb 2016 - Mar 2017"
-          content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
+        - name: "Research Assistant, Language and Communication Science"
+          date: "Nov 2014 - Apr 2016"
+          content: |
+            I worked as a research assistant in the department of Language and Communication Science at City, University of London in London, UK.
+
+            - Collaborating on publications, e.g. this paper: [Cultural adaptation and psychometric testing of The Scenario Test UK for people with aphasia](https://onlinelibrary.wiley.com/doi/abs/10.1111/1460-6984.12379)
+            - Coding and data analysis of gestures and intonation patterns in spontaneous speech samples by people with aphasia using R.
+            - Administration of a new diagnostic tool to assess language and cognition for people with aphasia and neurologically healthy controls.
+
+
+          #content: "I worked as a research assistant in the department of Language and Communication Science at City, University of London in London, UK.
+
+           # - Collaborating on pyblications.
+           # - Coding and data analysis of gestures and intonation patterns in spontaneous speech samples by people with aphasia using R.
+           # - Administration of a new diagnostic tool to assess language and cognition for people with aphasia and neurologically healthy controls
 
   # Education
   education:
@@ -265,14 +289,14 @@ params:
     items:
       - title: "PhD in Neurolinguistics"
         school:
-          name: "City St George’s, University of London, UK"
+          name: "City, University of London, UK"
           url: "https://www.citystgeorges.ac.uk/"
         date: "2011 - 2016"
         Grade: "no amendments"
         content: |-
-          Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
+          I published two papers:
+            - [Effects of word frequency and contextual predictability on sentence reading in aphasia: an eye movement analysis](https://www.tandfonline.com/doi/abs/10.1080/02687038.2017.1278741?journalCode=paph20)
+            - [The influence of sense-contingent argument structure frequencies on ambiguity resolution in aphasia](https://www.sciencedirect.com/science/article/abs/pii/S0028393217301197)
       - title: "Europen Master of Clinical Linguistics (EMCL)"
         school:
           name: "University of Potsdam, Germany"
@@ -280,25 +304,21 @@ params:
         date: "2008 - 2010"
         Grade: "A"
         content: |-
-          I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
-          - [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
-          - Face mask detection using a single convolutional neural network.
+          I published a paper:
+          - [Perseverationen beim Nachsprechen, Lesen, Benennen und Schreiben: Zwei Fallstudien/Perseverations in repetition, reading, naming and writing: two case studies](https://www.praxis-sprache.eu/fileadmin/SHA_Archiv/2011/2011_56-5-6_komplett_A.pdf)
 
-          Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-        featuredLink:
-          enable: true
-          name: "My academic record"
-          url: "https://example.com"
+        #featuredLink:
+         # enable: true
+         # name: "My academic record"
+         # url: "https://example.com"
       - title: "Magister in Anglistik, Sprachlehrforschung, Psychologie"
         school:
           name: "University of Hamburg, Germany."
           url: "https://www.uni-hamburg.de/"
         GPA: "1.0"
-        featuredLink:
-          enable: true
-          url: "https://example.com"
+        #featuredLink:
+         # enable: true
+         # url: "https://example.com"
 
   # Achievements
   achievements:
@@ -308,66 +328,67 @@ params:
       - title: Future Stars of Tech Award
         content: I was recognized for my data science work at Futurelearn.
         url: https://www.futurelearn.com/info/press-releases/futurelearn-data-scientist-honoured-at-future-stars-of-tech-awards
-        image: /images/achievement.jpg
+        image: /images/FSOT.png
+      - title: PhD Studentship (City, University of London)
+        content: Given a PhD Studentship to study in London, UK.
+        #url: "https://github.com/gurusabarish/hugo-profile"
+        image: /images/city.png
+      - title: Recipient of the Graduate Award (University of Hamburg, Germany)
+        content: Best thesis of faculty.
+        image: /images/hamburg.png
       - title: Recipient of the "GAB Förderpreis"​ (Research price)
         content: Prize for a research study (Issued by Fund from German Association for Aphasia Research and Treatment)
         image: /images/achievement.jpg
-      - title: PhD Studentship (City, University of London)
-        content: Given a PhD Studentship to study in London, UK.
-        url: "https://github.com/gurusabarish/hugo-profile"
-        image: /images/achievement.jpg
-      - title: Recipient of the Graduate Award (University of Hamburg, Germany)
-        content: Best thesis of faculty.
 
   # projects
   projects:
     enable: true
     # title: "Custom Name"
     items:
-      - title: Hugo Profile
-        content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
-        image: /images/projects/profile.png
+      - title: Sound Installation
+        content: Making animals talk triggered by movement (credit to the idea goes to my daughter), for personal portfolio.
+        image: /images/projects/makingthingstalk.jpg
         featured:
-          name: Demo
-          link: https://hugo-profile.netlify.app
+          #name: Demo
+          #link: https://hugo-profile.netlify.app
         badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
-        links:
-          - icon: fa fa-envelope
-            url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/hugo-profile
-          - icon: fab fa-twitter
-            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+          - "Python"
+          - "Raspberry Pi"
+        #links:
+          #- icon: fa fa-envelope
+          #  url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+          #- icon: fab fa-github
+          #  url: https://github.com/gurusabarish/hugo-profile
+          #- icon: fab fa-twitter
+          #  url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
 
-      - title: Image Converter
-        content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
-        image: /images/projects/converter.jpg
+      - title: Chatbot with RAG
+        content: I built a chatbot that answers questions, using a FAQ dataset. I used SentenceTransformer as an embedding model, which leverages Transformer models like BERT and generates sentence embeddings, for personal portfolio.
+        image: /images/projects/chatbot.png
         featured:
-          name: Demo
-          link: https://django-converter.herokuapp.com
+        #  name: Demo V2
+        #  link: https://hugo-profile-2.netlify.app
         badges:
-          - "Django"
-          - "Bootstrap"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/converter
+          - "ChromaDB"
+          - "SentenceTransformer"
+          - "OpenAI"
+          - "Ollama"
+        #links:
+        #  - icon: fab fa-github
+        #    url: https://github.com/gurusabarish/HugoProfileV2
 
-      - title: Hugo Profile V2
-        content: A clean and simple Hugo template for personal portfolio and blog.
-        image: /images/projects/profile2.jpg
-        featured:
-          name: Demo V2
-          link: https://hugo-profile-2.netlify.app
-        badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/HugoProfileV2
+      #- title: Image Converter
+     #   content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
+     #   image: /images/projects/converter.jpg
+        #featured:
+        #  name: Demo
+        #  link: https://django-converter.herokuapp.com
+     #   badges:
+     #     - "Django"
+     #     - "Bootstrap"
+        #links:
+       #   - icon: fab fa-github
+       #     url: https://github.com/gurusabarish/converter
 
   #Contact
   contact:
@@ -384,18 +405,18 @@ params:
     #   messageRows: 5
 
   footer:
-    recentPosts:
-      path: "blogs"
-      count: 3
-      title: Recent Posts
-      enable: true
-      disableFeaturedImage: false
+  #  recentPosts:
+  #    path: "blogs"
+  #    count: 3
+  #    title: Recent Posts
+  #    enable: true
+  #    disableFeaturedImage: false
     socialNetworks:
-      github: https://github.com
-      linkedin: https://linkedin.com
-      twitter: https://twitter.com
-      instagram: https://instagram.com
-      facebook: https://facebook.com
+      github: https://github.com/Linee
+      linkedin: https://www.linkedin.com/in/annelinehuck/
+      #twitter: https://twitter.com
+      #instagram: https://instagram.com
+      #facebook: https://facebook.com
 
   # List pages like blogs and posts
   listPages:
