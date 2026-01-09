@@ -1,4 +1,6 @@
 baseURL: "https://linee.github.io/line-portfolio/"
+relativeURLs: true
+canonifyURLs: true
 languageCode: "en-us"
 title: "Hugo Profile"
 theme: hugo-profile
