@@ -158,8 +158,8 @@ params:
           github: https://github.com/Linee
           linkedin: https://www.linkedin.com/in/annelinehuck/
       customIcons:
-        - icon: /fav.png
-          url: https://www.linkedin.com/in/annelinehuck/
+        #- icon: /fav.png
+        #  url: https://www.linkedin.com/in/annelinehuck/
 
   # About
   about:
@@ -349,7 +349,7 @@ params:
     items:
       - title: Sound Installation
         content: Making animals talk triggered by movement (credit to the idea goes to my daughter), for personal portfolio.
-        image: /images/projects/makingthingstalk.jpg
+        image: /images/projects/raspberrypi.avif
         featured:
           #name: Demo
           #link: https://hugo-profile.netlify.app
