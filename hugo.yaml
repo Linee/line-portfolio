@@ -349,7 +349,7 @@ params:
     items:
       - title: Sound Installation
         content: Making animals talk triggered by movement (credit to the idea goes to my daughter), for personal portfolio.
-        image: /images/projects/raspberrypi.avif
+        image: /images/projects/raspberrypi.jpg
         featured:
           #name: Demo
           #link: https://hugo-profile.netlify.app
