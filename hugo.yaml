@@ -1,4 +1,4 @@
-baseURL: "annelinehuck.com"
+baseURL: "https://annelinehuck.com/"
 
 relativeURLs: true
 canonifyURLs: true
