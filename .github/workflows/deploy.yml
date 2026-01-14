@@ -29,4 +29,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           publish_branch: gh-pages
-          force: true
+          force_orphan: true      # ✅ THIS is the key
+          commit_message: "Deploy site via GitHub Actions"
