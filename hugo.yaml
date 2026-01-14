@@ -138,7 +138,7 @@ params:
     enable: true
     intro: "Hi, my name is"
     title: "Line."
-    subtitle: "I transform human language into automated, intelligent workflows using NLP and linguistic expertise."
+    subtitle: "I leverage natural language processing and large language models to design intelligent, data-driven workflows."
     content: "PhD in Neurolinguistics (City, University of London)."
     image: "/images/line-pic.jpg"
     bottomImage:
