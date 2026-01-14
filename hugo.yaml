@@ -1,4 +1,5 @@
-baseURL: "https://linee.github.io/line-portfolio/"
+baseURL: "annelinehuck.com"
+
 relativeURLs: true
 canonifyURLs: true
 languageCode: "en-us"
@@ -176,6 +177,7 @@ params:
       items:
         - "Python"
         - "SQL"
+        - "Natual Language Processing"
         - "Large Language Models (LLM) & RAG"
         - "Amazon Web Services (AWS)"
         - "Machine Learning"
@@ -348,7 +350,7 @@ params:
     # title: "Custom Name"
     items:
       - title: Sound Installation
-        content: Making animals talk triggered by movement (credit to the idea goes to my daughter), for personal portfolio.
+        content: Making animals talk triggered by movement (credit to the idea goes to my daughter). For personal portfolio.
         image: /images/projects/raspberrypi.jpg
         featured:
           #name: Demo
@@ -365,7 +367,7 @@ params:
           #  url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
 
       - title: Chatbot with RAG
-        content: I built a chatbot that answers questions, using a FAQ dataset. I used SentenceTransformer as an embedding model, which leverages Transformer models like BERT and generates sentence embeddings, for personal portfolio.
+        content: I built a chatbot that answers questions, using a FAQ dataset. I used SentenceTransformer as an embedding model, which leverages Transformer models like BERT and generates sentence embeddings. For personal portfolio.
         image: /images/projects/chatbot.png
         featured:
         #  name: Demo V2
