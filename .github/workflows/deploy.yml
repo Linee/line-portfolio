@@ -1,36 +1,41 @@
-name: Deploy Hugo site to GitHub Pages
+name: Build and Deploy Hugo site
 
 on:
   push:
     branches:
-      - main  # Runs on push to main
+      - main  # Trigger build on push to main
 
 permissions:
-  contents: write
+  contents: write  # Needed for peaceiris/actions-gh-pages
 
 jobs:
-  build-deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
+      # 1️⃣ Checkout source code and theme submodules
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          submodules: true
+          submodules: true  # fetch Hugo themes
           fetch-depth: 0
 
+      # 2️⃣ Install Hugo
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: "latest"
 
+      # 3️⃣ Build the Hugo site
       - name: Build Hugo site
         run: hugo --minify
 
+      # 4️⃣ Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          publish_branch: main
-          force_orphan: true
+          publish_dir: ./public         # The folder Hugo generates
+          publish_branch: gh-pages      # Branch GitHub Pages will serve
+          force_orphan: true            # Clean orphan branch on each deploy
           commit_message: "Deploy site via GitHub Actions"
