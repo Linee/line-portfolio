@@ -1,1 +1,27 @@
-public/*
+# Hugo generated files
+public/
+resources/
+.hugo_build.lock
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.tmp
+
+# IDEs
+.vscode/
+.idea/
+
+# Node (if you use PostCSS / npm with Hugo)
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Env files
+.env
+.env.*
+
+# Logs
+*.log
