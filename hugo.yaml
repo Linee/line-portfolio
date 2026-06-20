@@ -339,6 +339,27 @@ params:
     enable: true
     # title: "Custom Name"
     items:
+
+      - title: Research Summariser Application
+        content: Web application that summarises public research papers from Europe PubMed Central with Large Language Models via Hugging Face. Originally built for a research foundation. The current version is a general version where you can enter any research topics available on Europe PMC.
+        image: /images/projects/research.jpg
+        featured:
+          #name: Demo
+          link: https://summarise-research.streamlit.app/
+        badges:
+          - "Python"
+          - "Hugging Face"
+          - "Large Language Models"
+          - "Render"
+          - "Streamlit"
+        #links:
+          #- icon: fa fa-envelope
+          #  url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+          #- icon: fab fa-github
+          #  url: https://github.com/gurusabarish/hugo-profile
+          #- icon: fab fa-twitter
+          #  url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+
       - title: Sound Installation
         content: Making animals talk triggered by movement (credit to the idea goes to my daughter). For personal portfolio.
         image: /images/projects/raspberrypi.jpg
