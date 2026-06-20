@@ -341,7 +341,7 @@ params:
     items:
 
       - title: Research Summariser Application
-        content: Web application that summarises public research papers from Europe PubMed Central with Large Language Models via Hugging Face. Originally built for a research foundation. The current version is a general version where you can enter any research topics available on Europe PMC.
+        content: Web application that summarises public research papers from Europe PubMed Central with Large Language Models via Hugging Face. Originally built for a research foundation. The current version is a general version where you can enter any research topics available on Europe PMC (first load may take ~30s due to free hosting)
         image: /images/projects/research.jpg
         featured:
           #name: Demo
